@@ -1,0 +1,31 @@
+import React from 'react'
+import { Component } from 'react'
+
+
+const Header = ({title}) => {
+    return (
+        <header className='top'>
+            <div className='wrap'>
+                <div className='header-content'>
+
+                    <div className='header-rating'>
+                        <div className=' header-rating-tag'>Рейтинг: </div>
+                        <div className='haeder-rating_icon'> ★ ★ ★ ★ ★ </div>
+                    </div>
+
+
+                    <div className='header-divider'></div>
+                    <h1 className='font-effect-fire-animation'>{title}</h1>
+                    <h3>
+                        <span>
+                            Быстрая доставка горячих 
+                            <span className ='sub-header'> #Бургеров</span>
+                        </span>
+                    </h3>
+                </div>
+            </div>
+        </header>
+    )
+}
+
+export default Header;
